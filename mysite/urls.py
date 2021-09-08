@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.render_login),
     path("perform_login", views.perform_login, name = "perform_login"),
-    path("perform_logout", views.perform_logout, name = "perform_logout")
+    path("perform_logout", views.perform_logout, name = "perform_logout"),
+    path("logged_in/", views.logged_in, name = "logged_in"),
 ]
