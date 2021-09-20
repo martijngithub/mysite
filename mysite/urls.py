@@ -22,5 +22,6 @@ urlpatterns = [
     path("", views.render_login),
     path("perform_login", views.perform_login, name = "perform_login"),
     path("perform_logout", views.perform_logout, name = "perform_logout"),
-    path("logged_in/", views.logged_in, name = "logged_in"),
+    path("index/", views.index, name = "index"),
+    path("add_customer", views.add_customers, name="add_customer")
 ]
